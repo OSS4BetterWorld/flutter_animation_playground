@@ -10,5 +10,9 @@ A simple Flutter app playground focused on Animation to:
 
 
 # Project Structures:
-- showcases:
-  - Listing all top favorite animations 
+
+## A. showcases:
+  - Listing all top favorite animations
+
+## B. issues playground:
+  - Create an example of your issue here and get help from community
