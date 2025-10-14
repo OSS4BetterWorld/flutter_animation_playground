@@ -1,8 +1,10 @@
+import 'package:collaborators/collaborator_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:issues/issue_browsing_screen.dart';
 import 'package:showcases/showcase_browsing_screen.dart';
 
-void main() {
+Future main() async {
+  collaboratorMgr.registerIssuesAndDemos();
   runApp(const MyApp());
 }
 

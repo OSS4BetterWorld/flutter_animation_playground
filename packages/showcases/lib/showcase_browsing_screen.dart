@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:showcases/animated_icon_screen.dart';
+import 'package:shared/widget_demo_screen.dart';
+import 'package:shared/widget_registry.dart';
 
 class ShowcaseBrowsingScreen extends StatefulWidget {
   const ShowcaseBrowsingScreen({super.key});
@@ -22,7 +23,9 @@ class _ShowcaseBrowsingScreenState extends State<ShowcaseBrowsingScreen> {
   Widget buildShowcaseMenu() {
     return ListView(
       children: [
-        buildListItem('Animated Icons', () => AnimatedIconScreen())
+        buildListItem('Icons', () => WidgetDemoScreen(title: "Icons", widgetRegistry: iconDemoWidgetRegistry)),
+        if (cardAndPageDemoWidgetRegistry.count > 0)
+          buildListItem('Cards & Pages', () => WidgetDemoScreen(title: "Cards & Pages", widgetRegistry: cardAndPageDemoWidgetRegistry))
       ],
     );
   }

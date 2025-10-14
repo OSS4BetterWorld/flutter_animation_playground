@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:issues/issues.dart';
+import 'package:shared/widget_registry.dart';
 
 class IssueBrowsingScreen extends StatefulWidget {
   const IssueBrowsingScreen({super.key});
@@ -14,9 +14,9 @@ class _IssueBrowsingScreenState extends State<IssueBrowsingScreen> {
     return Scaffold(
       appBar: AppBar(title: Text("Issue Playground")),
       body: ListView.builder(
-      itemCount: allIssues.length,
+      itemCount: issueExampleRegistry.count,
         itemBuilder: (context, index) {
-        var iss = allIssues[index];
+        var iss = issueExampleRegistry.getDemoAt(index);
         return InkWell(
           onTap: ()  => Navigator.push(context, MaterialPageRoute(builder: (_) => iss.createWidget())),
           child: Card(
