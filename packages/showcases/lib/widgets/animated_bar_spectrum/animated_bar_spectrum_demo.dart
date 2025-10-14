@@ -6,7 +6,8 @@ import 'package:showcases/widgets/showcase_ui_builder.dart';
 
 class AnimatedBarSpectrumDemo extends StatefulWidget {
   const AnimatedBarSpectrumDemo({super.key});
-
+  static String NAME = "Animated Bar Spectrum";
+  static String DESCRIPTION = "A simple animated bar spectrum icon";
   @override
   State<AnimatedBarSpectrumDemo> createState() =>
       _AnimatedBarSpectrumDemoState();
@@ -17,10 +18,10 @@ class _AnimatedBarSpectrumDemoState extends State<AnimatedBarSpectrumDemo> {
   @override
   Widget build(BuildContext context) {
     return ShowcaseUIBuilder.buildWidgetDemo(
-      "Animated Bar Spectrum",
+      AnimatedBarSpectrumDemo.NAME,
       "Author: Devngmo" +
           "\nSource Path: showcases\\lib\\widgets\\animated_bar_spectrum" +
-          "\nA simple animated bar spectrum icon",
+          "\n${AnimatedBarSpectrumDemo.DESCRIPTION}",
       AnimatedBarSpectrum(controller: absController),
       configPanel: buildConfigPanel(),
     );

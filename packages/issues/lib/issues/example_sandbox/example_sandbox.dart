@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class ExampleSandbox extends StatefulWidget {
   const ExampleSandbox({super.key});
-
+  static const String NAME = "Example Sandbox";
+  static const String DESCRIPTION = "Example for everyone try to learn Push Request";
   @override
   State<ExampleSandbox> createState() => _ExampleSandboxState();
 }
@@ -20,7 +21,7 @@ class _ExampleSandboxState extends State<ExampleSandbox> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          Text("You can learn how to edit source code and create Push Request in this example")
+          Text(ExampleSandbox.DESCRIPTION)
         ],
       ),
     );
