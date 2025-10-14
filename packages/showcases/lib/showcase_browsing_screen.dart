@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:showcases/animated_icon_screen.dart';
-import 'package:showcases/widgets/animated_bar_spectrum/animated_bar_spectrum_demo.dart';
-import 'package:showcases/widgets/showcase_ui_builder.dart';
 
 class ShowcaseBrowsingScreen extends StatefulWidget {
   const ShowcaseBrowsingScreen({super.key});

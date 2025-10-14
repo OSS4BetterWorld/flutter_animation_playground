@@ -2,7 +2,7 @@ name: showcases
 description: "A new Flutter package project."
 version: 0.0.1
 homepage:
-
+publish_to: 'none'
 environment:
   sdk: ^3.8.1
   flutter: ">=1.17.0"
