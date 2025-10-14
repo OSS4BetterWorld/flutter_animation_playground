@@ -16,3 +16,10 @@ A simple Flutter app playground focused on Animation to:
 
 ## B. issues playground:
   - Create an example of your issue here and get help from community
+
+## C. collaborators:
+  - Manage demos, issues from all collaborators.
+  - Every collaborator must create a Collaborator class ( class name = github account ), then add your issues, demos in your own classes to avoid conflict
+# Commit Rules:
+
+- Everyone working on the same branch: main
