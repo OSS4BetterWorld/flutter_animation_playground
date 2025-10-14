@@ -40,6 +40,8 @@ dependencies:
     path: packages/shared
   issues:
     path: packages/issues
+  collaborators:
+    path: packages/collaborators
 
 dev_dependencies:
   flutter_test:
